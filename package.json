@@ -1,5 +1,5 @@
 {
-  "name": "js_hooks",
+  "name": "webhook_executor",
   "version": "1.0.0",
   "description": "A simple nodejs apps that handle webhooks call by executing command scripts",
   "main": "src/server.js",
