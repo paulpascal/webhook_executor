@@ -15,7 +15,7 @@ const handleHook = (hookItem) => {
 
   hookCommand.stdout.on('data', (data) => {
     const buff = new Buffer.from(data);
-    logger.debug(buff.toString('utf-8'));
+    logger.info(`[COMMAND-LOG]: ${buff.toString('utf-8')}`);
   });
 
   hookCommand.on('close', (code) => {

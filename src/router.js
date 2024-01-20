@@ -26,9 +26,9 @@ const initializeRouter = (expressApp) => {
 
     const { id } = hookItem;
 
-    expressApp.all(`/${id}`, async (req, res) => {
+    expressApp.all(`/hooks/${id}`, async (req, res) => {
       // respond to origin server
-      res.send(200);
+      res.sendStatus(200);
       // handle hook
       command.handleHook(hookItem);
     });
